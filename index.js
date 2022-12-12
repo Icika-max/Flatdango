@@ -1,7 +1,19 @@
-const url = 'http://localhost:3000/films/'
+const films = document.getElementById('films')
+
+const request = async () => {
+    let req = await fetch("http://localhost:3000/films")
+    let res = await req.json()
+        res.forEach((film, i) => {
+            const li = document.createElement('li')
+            li.innerText = film.title
+            films.append(li)
+        })
+}
+request();
+const url = 'http://localhost:3000/films/1'
 document.addEventListener("DOMContentLoaded", () => {
     const fetchFirstFilm = () => {
-      fetch(url + id)
+      fetch(url)
      .then(response => response.json())
      .then(data => { renderFirstFilm(data) })
     }
@@ -12,6 +24,7 @@ const renderFirstFilm = (film) => {
     const poster = document.getElementById('poster')
     poster.src = film.poster
 }
+film();
 
 const title = document.getElementById("title")
 title.innerText = film.title
