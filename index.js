@@ -10,7 +10,7 @@ const request = async () => {
         })
 }
 request();
-const url = 'http://localhost:3000/films/1'
+const url = 'http://localhost:3000/films/5'
 document.addEventListener("DOMContentLoaded", () => {
     const fetchFirstFilm = () => {
       fetch(url)
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const renderFirstFilm = (film) => {
     const poster = document.getElementById('poster')
     poster.src = film.poster
-}
-film();
+
+
 
 const title = document.getElementById("title")
 title.innerText = film.title
@@ -60,9 +60,10 @@ const updateTicketNum = (obj) => {
          },
     body: JSON.stringify(obj)
     }
-    fetch((url + id), options)
+    fetch((url), options)
     .then(response => response.json())
     .then(data => {
     renderFirstFilm(data)
     })
     }
+  }
