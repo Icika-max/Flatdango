@@ -16,6 +16,10 @@ Then, open the index.html file on your browser to run the application.
 
 Write your code in the index.js file. The base URL for your API will be http://localhost:3000.
 
+**HOW TO RUN**
+run your server by visiting this route in the browser:
+https://icika-max.github.io/Flatdango/
+
 **Core Deliverables**
 
 As a user, I can:
@@ -62,13 +66,13 @@ Example response:
    }
 ]
   3. Buy a ticket for a movie. After clicking the "Buy Ticket" button, I should see the number of available tickets decreasing on the frontend. I should not be able to buy a ticket if the showing is sold out (if there are 0 tickets available). No persistence is needed for this feature.
-  
+
   **Bonus Deliverables**
-  
+
   These bonus deliverables are here if you want an extra challenge and won't affect your score. Make sure to commit your work to save your progress before attempting the bonus deliverables!
     1. Click on a movie in the menu to replace the currently displayed movie's details with the new movie's details. Note that you may have to make an additional GET request to access the movie's details.
     2. When a movie is sold out (when there are no available tickets remaining), indicate that the movie is sold out by changing the button text to "Sold Out". Also update the film item in the ul#films menu by adding a class of sold-out to the film. For reference, here's what the contents of the ul#films element should look like with a sold out film:
-    
+
     <li class="film item">(Title of film)</li>
 <li class="sold-out film item">(Title of a sold-out film)</li>
 <li class="film item">(Title of film)</div>
