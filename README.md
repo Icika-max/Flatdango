@@ -109,3 +109,7 @@ DELETE /films/:id
 
 Example Response:
 {}
+
+AUTHOR This project was written by: kennedy icika
+
+LICENCE This project is licenced under Apache 2.0
